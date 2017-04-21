@@ -1,0 +1,658 @@
+.clearfix:before,
+	.clearfix:after {       
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+		font-size:0;
+	}
+	.clearfix { *zoom:1;}
+	@font-face {
+		font-family: 'iconfont';
+		src: url('../fonts/iconfont.eot');
+		src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/iconfont.woff') format('woff'),
+		url('../fonts/iconfont.ttf') format('truetype'),
+		url('../fonts/iconfont.svg#iconfont') format('svg');
+	}
+	.iconfont{
+		font-family:"iconfont" !important;
+		font-size:16px;font-style:normal;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke-width: 0.2px;
+		-moz-osx-font-smoothing: grayscale;
+	}
+		.wrap{
+			width: 100%;
+			position: absolute;
+		}
+		.menu{
+			width: 100%;
+			height: 1rem;
+			background: url("../images/homepage/u151.jpg") no-repeat left top;
+			background-size: 100%;
+			position: fixed; top: 0; left: 0;
+			z-index: 9;
+			padding-top: 0.7rem;
+		}
+		.menu>div{
+			width: 0.8rem;
+			height: 0.8rem;
+			float: right;
+			margin-right: 0.4rem;
+		}
+		.banner{
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+		.banner .swiper-container {
+			margin-top: 1.7rem;
+			width: 100%;
+			height: 5.48rem;
+		}
+		.banner .swiper-wrapper img{
+			max-width: 100%;
+		}
+		.banner .swiper-pagination{
+			top: 4.9rem;
+			z-index: 5;
+		}
+		.banner .swiper-pagination-bullet{
+			background: #fff;
+			opacity: 1;
+		}
+		.banner .swiper-pagination-bullet-active{
+			background: red;
+		}
+
+
+		.show{
+			width: 100%;
+			height: 2.8rem;
+			margin-top: 0.21rem;
+			margin-bottom: 0.21rem;
+			overflow: hidden;
+		}
+		.showmax{
+			width: 27.28rem;
+		}
+		.showmax a{
+			width: 4.48rem;
+			float: left;
+			margin-right: 0.08rem;
+			display: block;
+		}
+		.showmax a:last-child{
+			margin-right: 0;
+		}
+		.showmax a img{
+			max-width: 100%;
+		}
+
+
+		.exhibit{
+			width: 200%;
+			overflow: hidden;
+		}
+		.exhibit div{
+			width: 50%;
+			float: left;
+		}
+		.exhibit div p{
+			display: block;
+			width: 50%;
+			float: left;
+			font-size: 0.5rem;
+			line-height: 0.87rem;
+		}
+		.exhibit div p span{
+			display: block;
+			margin: 0 0.5rem;
+		}
+		.exhibit div:first-child p:first-child{
+			background: -webkit-linear-gradient(left, #cd8c88 , #cf2818);
+			background: -o-linear-gradient(right, #cd8c88, #cf2818);
+			background: -moz-linear-gradient(right, #cd8c88, #cf2818);
+			background: linear-gradient(to right, #cd8c88 , #cf2818);
+			border-top-right-radius:2rem;
+			border-bottom-right-radius:2rem;
+			text-align: right;
+			color: #fff;
+		}
+		.exhibit div:last-child p:last-child{
+			background: -webkit-linear-gradient(left, #cf2818, #cd8c88 );
+			background: -o-linear-gradient(right, #cf2818, #cd8c88);
+			background: -moz-linear-gradient(right, #cf2818, #cd8c88);
+			background: linear-gradient(to right , #cf2818, #cd8c88);
+			border-top-left-radius:2rem;
+			border-bottom-left-radius:2rem;
+			text-align: left;
+			color: #fff;
+		}
+		.exhibit div:last-child p:first-child{
+			text-align: right;
+		}
+		.none{
+			margin-top: -5.63rem;
+		}
+		.block{
+			margin-top: 0;
+		}
+		.bg{
+			background: #c9c9c9;
+		}
+		.main{
+			width: 100%;
+			overflow: hidden;
+		}
+		.m_max{
+			width: 200%;
+			overflow: hidden;
+			position: relative;
+		}
+		.main_left{
+			width: 50%;
+			float: left;
+		}
+		.main_right{
+			float: left;
+			width: 50%;
+		}
+		.main img{
+			max-width: 100%;
+			margin-bottom: 0.22rem;
+		}
+		.main_left img:last-child{
+			margin: 0;
+		}
+		.main_left1,.main_right1{
+			height:12.11rem;
+		}
+		.m_max ul{
+			position: absolute;bottom: 0;right: 0.3rem;
+			z-index: 9;
+			height: 0.85rem;
+			line-height: 0.85rem;
+		}
+		.m_max ul a{
+			display: block;
+			float: left;
+			margin-left: 0.3rem;
+			color: #fff;
+		}
+		.m_max ul li a:nth-child(2){
+			margin-left: 0.5rem;
+		}
+		.m_max ul i{
+			
+			font-size: 0.6rem;
+			margin-right: 0.05rem;
+		}
+		.m_max ul span{
+			color: #fff;
+			font-size: 0.3rem;
+			font-weight: 100;
+		}
+		.red{
+			color: red;
+		}
+
+		footer{
+			position:fixed; bottom:0; left: 0;
+			width: 100%;
+			height:1.45rem;
+			background:#000;
+			z-index: 9;
+		}
+		footer>ul{
+			width: 100%;
+		}
+		footer>ul>li{
+			width:25%;
+			float:left;
+		}
+		footer a{
+			display: block;
+			text-align: center;
+			color:#fff;
+			font-size: 0.28rem;
+			text-decoration: none;
+			padding-top: 1rem;
+			line-height: 0.45rem;
+		}
+		footer li:nth-child(1)>a{
+			color:#dc230e;
+			background:url("../images/homepage/icon1_u138_03.png") no-repeat 1rem 0.22rem;
+			background-size: 0.7rem;
+		}
+		footer li:nth-child(2)>a{
+			background:url("../images/homepage/icon3_u132_03.png") no-repeat 1rem 0.22rem;
+			background-size: 0.7rem;
+		}
+		footer li:nth-child(3)>a{
+			background:url("../images/homepage/icon7_u134_03.png") no-repeat 1rem 0.22rem;
+			background-size: 0.7rem;
+		}
+		footer li:nth-child(4)>a{
+			background:url("../images/homepage/icon5_u136_03.png") no-repeat 1.1rem 0.20rem;
+			background-size: 0.55rem;
+		}
+
+
+		.details,.details2,.details3{
+			width: 100%;
+			background: #fff;
+			position: absolute; top: 100%;
+			z-index: 10;
+			padding-bottom: 1.45rem;
+		}
+		.sum_up i,.sum_up2 i{
+			font-size: 1rem;
+			color: #fff;
+			position: fixed; top: 0.3rem; left: 0.3rem;
+		}
+		.sum_up img,.referral img,.works_show img,.sum_up2 img,.content>img{
+			display: block;
+			max-width: 100%;
+		}
+		.content div,.review>div{
+			width: 2.21rem;
+			height: 0.6rem;
+			background: #dd4f43;
+			border-top-right-radius:1rem;
+			border-bottom-right-radius:1rem;
+			text-align: center;
+		}
+		.content div span,.review>div span{
+			line-height: 0.6rem;
+			font-size: 0.4rem;
+			color: #fff;
+		}
+		.content p,.referral p{
+			font-size: 0.2rem;
+			display: block;
+			width: 9.8rem;
+			margin: 0 auto;
+			line-height: 0.6rem;
+		}
+		.works_show img{
+			margin-bottom: 0.3rem;
+		}
+		.works_show img:last-child{
+			margin-bottom: 0;
+		}
+		.review ul li{
+			padding: 0.3rem 0;
+			background: #dcdcdc;
+		}
+		.review ul div:first-child{
+			width: 1rem;
+			height: 1rem;
+			overflow: hidden;
+			border-radius: 50%;
+			margin-left: 0.35rem;
+			margin-right: 0.4rem;
+		}
+		.review ul div img{
+			max-width: 100%£»
+		}
+		.review ul div{
+			float: left;
+		}
+		.review ul div:last-child{
+			width: 8rem;
+		}
+		.review ul div:last-child b{
+			font-size: 0.4rem;
+			display: block;
+		}
+		.review ul div:last-child span,.review ul div:last-child p{
+			font-size: 0.2rem;
+			display: block;
+		}
+		.review ul div:last-child p{
+			margin-top: 0.2rem;
+		}
+		.no{
+			display: none;
+		}
+		.all{
+			font-size: 0.4rem;
+			text-align: center;
+			line-height: 1.14rem;
+			background: #dcdcdc;
+			margin-top: 0.1rem;
+		}
+		.footer{
+			position: fixed; bottom: 0;
+			width: 100%;
+			background: #000;
+			line-height: 1.45rem;
+		}
+		.footer li{
+			width: 25%;
+			float: left;
+			text-align: center;
+			color: #fff;
+			font-size: 0.4rem;
+		}
+		.change{
+			background: #fff;
+			width: 100%;
+			height: 6.07rem;
+			position: fixed; bottom: 0;
+			border-top-left-radius:0.3rem;
+			border-top-right-radius:0.3rem;
+			margin-bottom: -6.07rem;
+			z-index: 11;
+		}
+		.change p{
+			height: 1.51rem;
+			line-height: 1.51rem;
+			text-align: center;
+			font-size: 0.5rem;
+		}
+		.change li{
+			font-size: 0.4rem;
+			width: 2.07rem;
+			float: left;
+			text-align: center;
+			color: red;
+		}
+		.change li:first-child{
+			margin-left: 1.06rem;
+		}
+		.change li>a{
+			height: 0.8rem;
+			line-height: 0.8rem;
+			display: block;
+		}
+		.change ul{
+			margin: 0 0.56rem;
+			border-bottom: 1px solid red;
+			margin-top: 0.28rem;
+			padding-bottom: 0.72rem;
+		}
+		.change ul img{
+			width: 1.35rem;
+			height: 1.35rem;
+			display: block;
+			margin: 0 auto;
+		}
+		.change>a{
+			display: block;
+			width: 100%;
+			font-size: 0.5rem;
+			text-align: center;
+			display: block;
+			text-align: center;
+			height: 1.45rem;
+			line-height: 1.45rem;
+		}
+		.fuceng{
+			width: 100%;
+			height: 100%;
+			position: fixed;top: 0;
+			opacity: 0.5;
+			background: #78787a;
+			z-index: 11;
+		}
+
+		.save{
+			background: #e5e5e5;
+			width: 100%;
+			height: 4.25rem;
+			position: fixed; bottom: 0;
+			z-index: 16;
+			border-top-left-radius:0.3rem;
+			border-top-right-radius:0.3rem;
+			margin-bottom: -4.25rem;
+		}
+		.save li{
+			height: 1.35rem;
+			line-height: 1.35rem;
+			text-align: center;
+			font-size: 0.4rem;
+		}
+		.save li:last-child{
+			font-size: 0.5rem;
+		}
+		.save_jin{
+			width: 100%;
+			height: 100%;
+			position: fixed;top: 0;
+			z-index: 15;
+			opacity: 0.7;
+			background: #78787a;
+		}
+
+		.go{
+			position: absolute;
+			z-index: 13;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			margin-left: 100%;
+		}
+		.go a{
+			width: 0.8rem;
+			height: 0.8rem;
+			position: absolute;top: 0.5rem;
+		}
+		.go img{
+			max-width: 100%;
+		}
+		.go h3{
+			margin-top: 0.2rem;
+			font-size: 0.4rem;
+			font-weight: 600;
+		}
+		.go span{
+			font-size: 0.3rem;
+			font-weight: 400;
+			display: block;
+		}
+		.go p{
+			font-size: 0.3rem;
+			font-weight: 400;
+			margin-top: 0.3rem;
+		}
+		.go h3,.go span,.go p{
+			margin-left: 0.45rem;
+		}
+		.red2{
+			color: red;
+		}
+		
+		.discuss{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 15;
+			background: #fff;
+			margin-left: 100%;
+		}
+		.dcu1{
+			height: 1rem;
+			text-align: center;
+			width: 10rem;
+			margin: 0 auto;
+			border-bottom: 1px solid #000;
+			padding-top: 0.6rem;
+		}
+		.discuss i{
+			font-size: 0.8rem;
+			float: left;
+		}
+		.discuss span{
+			font-size: 0.5rem;
+			color: red;
+		}
+		.dcu1 img{
+			float: right;
+			width: 0.8rem;
+			height: 0.8rem;
+		}
+		textarea{
+			width: 10rem;
+			height: 7.9rem;
+			line-height: 1rem;
+			border: 0;
+			outline: 0;
+			resize:none;
+			padding-left: 0.4rem;
+		}
+		textarea + div{
+			margin-left: 0.7rem;
+			position: fixed;bottom: 0.5rem;
+		}
+		textarea + div>img{
+			width: 0.8rem;
+			height: 0.6rem;
+			display: block;
+			float: left;
+			margin-right: 0.3rem;
+		}
+
+
+.search{
+	width: 10.8rem;
+	height: 100%;
+	background: url("../images/homepage/u155.png");
+	position: absolute;top: 0;
+	z-index: 10;
+	margin-left: 100%;
+}
+.seabox{
+	width: 9.4rem;
+	height: 0.9rem;
+	padding-top: 0.9rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #000;
+}
+.seabox>img{
+	width: 0.46rem;
+	height: 0.46rem;
+	display: block;
+	float: left;
+}
+.seabox>input{
+	width: 8rem;
+	height: 0.46rem;
+	line-height: 0.46rem;
+	font-size: 0.5rem;
+	float: left;
+	border: 0;
+	outline:0;
+	text-indent: 0.5rem;
+}
+.seabox>span{
+	width: 0.8rem;
+	text-align: center;
+	display: block;
+	float: left;
+	font-size: 0.5rem;
+}
+.not{
+	width: 10.8rem;
+	height: 3.72rem;
+	padding-top: 1.48rem;
+}
+.not>img{
+	width: 0.87rem;
+	height: 0.87rem;
+	margin: 0 auto;
+	display: block;
+}
+.not>p{
+	font-size: 0.5rem;
+	text-align: center;
+	margin-top: 0.3rem;
+}
+.terms{
+	margin-top: 1.26rem;
+}
+.terms>p{
+	font-size: 0.4rem;
+	text-align: center;
+}
+.terms>ul:nth-child(2){
+	margin-top: 1rem;
+}
+.terms>ul:nth-child(3){
+	margin-top: 0.53rem;
+}
+.terms>ul:nth-child(4){
+	margin-top: 0.7rem;
+}
+.terms>ul li{
+	text-align: center;
+	height: 0.72rem;
+	line-height: 0.72rem;
+}
+.terms>ul img{
+	width: 0.35rem;
+	height: 0.4rem;
+	margin-top: 0.15rem;
+}
+.terms>ul a{
+	font-size: 0.3rem;
+	margin-right: 0.5rem;
+}
+
+.drawing{
+	width: 100%;
+	background: #fff;
+	position: absolute;top: 0;
+	z-index: 20;
+	padding-top: 1.32rem;
+	padding-bottom: 1.45rem;
+	margin-left: 100%;
+}
+.dratop{
+	width: 100%;
+	height: 1.32rem;
+	position: fixed; top: 0;
+	z-index: 16;
+}
+.dratop div{
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;top: 0.5rem;right: 0.5rem;
+}
+.drawing img{
+	max-width: 100%;
+}
+.draimg{
+	position: relative;
+	margin-bottom: 0.22rem;
+}
+..draimg:last-child{
+	margin-bottom: 0;
+}
+.draimg>ul{
+	position: absolute;bottom: 0;right: 0.3rem;
+	z-index: 9;
+	height: 0.85rem;
+	line-height: 0.85rem;
+}
+.draimg>ul a{
+	display: block;
+	float: left;
+	margin-left: 0.3rem;
+	color: #fff;
+}
+.draimg>ul li a:nth-child(2){
+	margin-left: 0.5rem;
+}
+.draimg>ul i{
+	font-size: 0.6rem;
+	margin-right: 0.05rem;
+}
+.draimg>ul span{
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: 100;
+}

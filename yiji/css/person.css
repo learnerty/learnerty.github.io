@@ -1,0 +1,458 @@
+.clearfix:before,
+.clearfix:after {       
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	font-size:0;
+}
+.clearfix { *zoom:1;}
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/iconfont.woff') format('woff'),
+	url('../fonts/iconfont.ttf') format('truetype'),
+	url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:16px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+.wrap{
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+.top{
+	width: 100%;
+	height: 3.1rem;
+	background: url("../images/person/1.png") no-repeat center center;
+	background-size: 100%;
+	padding-top: 4.4rem;
+}
+.iconfont1{
+	font-size: 0.6rem;
+	position: absolute; top: 0.45rem; right: 0.45rem;
+	color: #fff;
+}
+.h_img{
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute; top: 1.8rem; left: 4.2rem;
+}
+.h_img img{
+	max-width: 100%;
+}
+.top p{
+	font-size: 0.6rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 100;
+}
+.top ul{
+	width: 5.4rem;
+	margin: 0 auto;
+	margin-top: 0.6rem;
+}
+.top li{
+	font-size: 0.5rem;
+	color: #fff;
+	float: left;
+	width: 1.8rem;
+	text-align: center;
+}
+.top li span{
+	font-size: 0.4rem;
+	display: block;
+}
+
+.gather{
+	width: 10.5rem;
+	padding: 0 0.15rem;
+}
+.gather>p{
+	font-size: 0.5rem;
+	line-height: 1.3rem;
+	text-indent: 0.35rem;
+}
+.gather>p span{
+	width: 1.87rem;
+	background:#dd4f43;
+	line-height: 0.6rem;
+	height: 0.6rem;
+	margin-top: 0.35rem;
+	position: absolute; right: 0;
+	font-size: 0.4rem;
+	border-top-left-radius:1rem;
+	border-bottom-left-radius:1rem;
+	color: #fff;
+}
+.g_img div{
+	width: 3.35rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+.g_img div:last-child{
+	margin-right: 0;
+}
+.g_img div img{
+	display: block;
+	box-shadow: 2px 2px 5px #888888;
+	max-width: 100%;
+}
+.g_img p{
+	font-size: 0.3rem;
+	text-indent: 0.3rem;
+	line-height: 0.65rem;
+}
+
+.yuan{
+	background: #c9c9c9;
+}
+.exhibit{
+	width: 200%;
+	overflow: hidden;
+}
+.exhibit div{
+	width: 50%;
+	float: left;
+}
+.exhibit div p{
+	display: block;
+	width: 50%;
+	float: left;
+	font-size: 0.5rem;
+	line-height: 0.87rem;
+}
+.exhibit div p span{
+	display: block;
+	text-align: center;
+}
+.exhibit div:first-child p:first-child{
+	background: -webkit-linear-gradient(left, #cd8c88 , #cf2818);
+	background: -o-linear-gradient(right, #cd8c88, #cf2818);
+	background: -moz-linear-gradient(right, #cd8c88, #cf2818);
+	background: linear-gradient(to right, #cd8c88 , #cf2818);
+	border-top-right-radius:2rem;
+	border-bottom-right-radius:2rem;
+	color: #fff;
+}
+.exhibit div:last-child p:last-child{
+	background: -webkit-linear-gradient(left, #cf2818, #cd8c88 );
+	background: -o-linear-gradient(right, #cf2818, #cd8c88);
+	background: -moz-linear-gradient(right, #cf2818, #cd8c88);
+	background: linear-gradient(to right , #cf2818, #cd8c88);
+	border-top-left-radius:2rem;
+	border-bottom-left-radius:2rem;
+	color: #fff;
+}
+.yuan img{
+	width: 5.17rem;
+	display: block;
+	float: left;
+	margin-left: 0.15rem;
+	margin-top: 0.2rem;
+}
+
+footer{
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	height:1.45rem;
+	background:#000;
+	z-index: 20;
+}
+footer>ul{
+	width: 100%;
+}
+footer>ul>li{
+	width:25%;
+	float:left;
+}
+footer a{
+	display: block;
+	text-align: center;
+	color:#fff;
+	font-size: 0.28rem;
+	text-decoration: none;
+	padding-top: 1rem;
+	line-height: 0.45rem;
+}
+footer li:nth-child(1)>a{
+	background:url("../images/homepage/icon2__2_u140_03.png") no-repeat 1rem 0.22rem;
+	background-size: 0.7rem;
+}
+footer li:nth-child(2)>a{
+	background:url("../images/homepage/icon3_u132_03.png") no-repeat 1rem 0.22rem;
+	background-size: 0.7rem;
+}
+footer li:nth-child(3)>a{
+	background:url("../images/homepage/icon7_u134_03.png") no-repeat 1rem 0.22rem;
+	background-size: 0.7rem;
+}
+footer li:nth-child(4)>a{
+	color:#dc230e;
+	background:url("../images/homepage/icon6__2_u148_03.png") no-repeat 1.1rem 0.20rem;
+	background-size: 0.55rem;
+}
+
+
+.setting{
+	width: 100%;
+	height: 100%;
+	position: absolute; top: 0;
+	z-index: 10;
+	background: #dfe8ed;
+	margin-left: 100%;
+}
+.menu{
+	width: 100%;
+	height: 1.7rem;
+	background: url("../images/person/u151.png");
+	background-size: 100%;
+}
+.menu i{
+	font-size: 0.8rem;
+	line-height: 1.7rem;
+	margin-left: 0.5rem;
+	margin-bottom: 0.4rem;
+}
+.set1,.set2{
+	margin-top: 0.44rem;
+	font-size: 0.4rem;
+	background: #f0f0f2;
+	padding-left: 0.5rem;
+	padding-right: 0.2rem;
+}
+.setting li{
+	line-height: 1.35rem;
+	border-bottom: 1px solid #bfc3c6;
+}
+.setting li:last-child{
+	border-bottom: 0;
+}
+.set1 i{
+	width: 1.1rem;
+	float: right;
+	text-align: right;
+	margin-right: 1.05rem;
+}
+.set1 p{
+	width: 1.1rem;
+	float: right;
+	margin-right: 1.05rem;
+}
+.set1 img{
+	max-width: 100%£»
+}
+.set1 span{
+	color: red;
+}
+.quit{
+	width: 100%;
+	height: 4.1rem;
+	background: url("../images/person/7_05.png") no-repeat;
+	background-size: 100% 100%;
+	padding-top: 2.64rem;
+}
+.quit div{
+	width: 4.32rem;
+	height: 0.9rem;
+	margin: 0 auto;
+	border-top-left-radius:2rem;
+	border-bottom-left-radius:2rem;
+	border-top-right-radius:2rem;
+	border-bottom-right-radius:2rem;
+}
+.quit p{
+	margin-top: 0.4rem;
+	text-align: center;
+}
+.none{
+	display: none;
+}
+
+.message{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: absolute; top: 0;
+	z-index: 10;
+	background: #dfe8ed;
+	margin-left: 100%;
+}
+.mes1,.mes2{
+	margin-top: 0.44rem;
+	font-size: 0.4rem;
+	background: #f0f0f2;
+	padding-left: 0.5rem;
+	padding-right: 0.2rem;
+}
+.message li{
+	font-size: 0.5rem;
+	height: 1.45rem;
+	line-height: 1.45rem;
+	border-bottom: 1px solid #bfc3c6;
+}
+.message li:last-child{
+	border-bottom: 0;
+}
+.mes1 li:first-child,.mes2 li:first-child{
+	height: 2.25rem;
+	line-height: 2.25rem;
+}
+.mes1 li:first-child div{
+	width: 1.7rem;
+	height: 1.7rem;
+	border-radius: 50%;
+	overflow: hidden;
+	float: right;
+	margin-top: 0.26rem;
+}
+.head_por img{
+	max-width: 100%;
+}
+.mes1 li:first-child div img{
+	max-width: 100%£»
+}
+.mes1 li:first-child i,.mes2 li:first-child i{
+	display: block;
+	width: 0.4rem;
+	float: right;
+	margin-right: 0.8rem;
+	text-align: right;
+}
+
+.message p{
+	width: 4rem;
+	float: right;
+	margin-right: 0.8rem;
+	text-align: right;
+	font-size: 0.4rem;
+}
+.message i{
+	margin-left: 0.45rem;
+}
+
+.mes2 li:first-child i,.mes2 li:last-child i{
+	display: block;
+	float: right;
+}
+.mes2 li:first-child img{
+	width: 1.17rem;
+	height: 1.17rem;
+	float: right;
+	margin-top: 0.65rem;
+}
+.mes2 li:last-child img{
+	width: 0.52rem;
+	height: 0.54rem;
+	float: right;
+	margin-top: 0.42rem;
+}
+
+.change{
+	background: #e5e5e5;
+	width: 100%;
+	height: 4.05rem;
+	position: fixed; bottom: 0;
+	border-top-left-radius:0.3rem;
+	border-top-right-radius:0.3rem;
+	margin-bottom: -4.05rem;
+}
+.change li{
+	height: 1.35rem;
+	text-align: center;
+}
+.fuceng{
+	width: 100%;
+	height: 100%;
+	position: fixed;top: 0;
+	opacity: 0.5;
+	background: #78787a;
+}
+
+.takeEx{
+	width: 100%;
+	height: 100%;
+	background: #f0f0f2;
+	position: absolute;top: 0;
+	margin-left: 100%;
+}
+.teTop{
+	position: fixed; top: 0;
+	z-index: 15;
+	background: #f0f0f2;
+	width: 100%;
+}
+.teTop img{
+	max-width: 100%;
+}
+.teTop i{
+	position: absolute; top: 0.6rem; left: 0.3rem;
+	font-size: 1rem;
+}
+.teTop p{
+	margin-top: 0.04rem;
+	width: 9.64rem;
+	margin: 0 auto;
+	line-height: 1.02rem;
+}
+.teTop span:nth-child(1),.teTop span:nth-child(2){
+	font-size: 0.4rem;
+}
+.teTop span:nth-child(2){
+	color: #aaaaac;
+}
+.teTop span:nth-child(3){
+	font-size: 0.3rem;
+	float: right;
+}
+.taCon{
+	margin-top: 2.8rem;
+}
+.taCon div{
+	position: relative;
+	margin-bottom: 0.22rem;
+}
+.taCon div:last-child{
+	margin-bottom: 0;
+}
+.taCon img{
+	max-width: 100%;
+}
+.taCon ul{
+	position: absolute;bottom: 0;right: 0.3rem;
+	z-index: 9;
+	height: 0.85rem;
+	line-height: 0.85rem;
+}
+.taCon ul a{
+	display: block;
+	float: left;
+	margin-left: 0.3rem;
+	color: #fff;
+}
+.taCon ul li a:nth-child(2){
+	margin-left: 0.5rem;
+}
+.taCon ul i{
+	font-size: 0.6rem;
+	margin-right: 0.05rem;
+}
+.taCon ul span{
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: 100;
+}
+.red{
+	color: red;
+}
