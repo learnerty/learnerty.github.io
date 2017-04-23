@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + 'px';})()
+	</script>
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+	.clearfix:before,
+	.clearfix:after {       
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+		font-size:0;
+	}
+	.clearfix { *zoom:1;}
+	@font-face {
+		font-family: 'iconfont';
+		src: url('fonts/iconfont.eot');
+		src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/iconfont.woff') format('woff'),
+		url('fonts/iconfont.ttf') format('truetype'),
+		url('fonts/iconfont.svg#iconfont') format('svg');
+	}
+	.iconfont{
+		font-family:"iconfont" !important;
+		font-size:16px;font-style:normal;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke-width: 0.2px;
+		-moz-osx-font-smoothing: grayscale;
+	}
+		body,html{
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-container {
+		    width: 100%;
+			height: 100%;
+			position: absolute;top: 0;bottom: 0;
+		}
+		.wel{
+			background: url("images/lead in pages/u10.jpg");
+			background-size: 100%;
+		}
+		.login{
+			background: url("images/lead in pages/u13.jpg");
+			background-size: 100%;
+		}
+		span{
+			font-size: 0.4rem;
+			width: 100%;
+			position: absolute;bottom: 4rem;
+			text-align: center;
+		}
+		.wel a{
+			font-size: 0.4rem;
+			position: absolute;bottom: 2.5rem;
+			text-align: center;
+			width: 100%;
+			text-decoration: none;
+			color: #000;
+		}
+		form input{
+			width: 8.7rem;
+			margin-left: 1.04rem;
+			margin-right: 1.04rem;
+			line-height: 1.5rem;
+			border:none;
+			outline: none;
+			border-bottom: 1px solid #ccc;
+			font-size: 0.5rem;
+			text-align: center;
+			background: rgba(0,0,0,0);
+			color: #000;
+		}
+		form input:first-child{
+			margin-top: 6rem
+		}
+		.btn{
+			width: 1.4rem;
+			border: 0;
+			margin-top: 0.8rem;
+			font-size: 0.5rem;
+			text-align: center;
+		}
+		.btn1{
+			float: left;
+			margin-left: 2.7rem;
+		}
+		.btn2{
+			float: right;
+			margin-right: 2.7rem;
+		}
+		p{
+			font-size: 0.3rem;
+			text-align: center;
+			color: #827265;
+			width: 100%;
+			margin-bottom: 0.6rem;
+			margin-top: 5rem;
+		}
+		p input{
+			width: 0.3rem;
+			height: 0.3rem;
+			margin-right: 0.3rem;
+		}
+		p a{
+			font-size: 0.3rem;
+			color: #fff;
+			text-decoration: none;
+		}
+		.footer{
+			border: 0;
+			border-top: 1px solid #fff;
+			width: 100%;
+			line-height: 0.8rem;
+			padding-top: 0.45rem;
+			padding-bottom: 0.45rem;
+		}
+		.footer a{
+			float: left;
+			text-decoration: none;
+			display: block;
+			font-size: 0.5rem;
+			color: #4d4d4d;
+			padding-right: 0.7rem;
+			padding-left: 0.7rem;
+			border-right: 1px solid #fff;
+		}
+		.footer a:last-child{
+			border: 0;
+		}
+		.footer a i{
+			font-size: 1rem;
+			margin-right: 0.25rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide wel">
+				<span></span>
+				<a>今日推送 >></a>
+			</div>
+			<div class="swiper-slide login">
+				<form class="clearfix">
+					<input type="text" placeholder="点击输入手机号/Email登录">
+					<input type="password" placeholder="输入密码">
+					<input type="button" value="登录" class="btn btn1">
+					<input type="button" value="注册" class="btn btn2">
+				</form>
+				<p><input type="checkbox">登录或注册即同意艺集<a href="#">用户服务协议</a></p>
+				<div class="footer clearfix">
+					<a href="#"><i class="iconfont">&#xe60a;</i>微博</a>
+					<a href="#"><i class="iconfont">&#x343b;</i>微信</a>
+					<a href="#"><i class="iconfont">&#xe62d;</i>QQ</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script>
+		window.onload = function(){
+			var mySwiper = new Swiper ('.swiper-container');
+			var date = new Date();
+			var year = date.getFullYear();
+			var mon = date.getMonth()+1;
+			var da = date.getDate();
+			if(mon<10){
+				mon = "0" + mon;
+			}
+			if(da<10){
+				da = "0" + da;
+			}
+			function gTag(tagName){
+				return document.getElementsByTagName(tagName);
+			}
+			function gCl(className){
+				return document.getElementsByClassName(className);
+			}
+			var span = gTag('span')[0];
+			span.innerHTML = "- "+year+" / "+mon+" / "+da+" -";
+
+			var a = gTag("a")[0];
+			var sw = gCl("swiper-wrapper")[0];
+			var hammertime = new Hammer(a);
+			hammertime.on('tap', function() {
+				sw.setAttribute("style","transition-duration: 300ms; transform: translate3d(-100%, 0px, 0px);");
+			});
+			var bt = gCl("btn1")[0];
+			var hammertime1 = new Hammer(bt);
+			hammertime1.on('tap', function() {
+				location.href = "home.html";
+			});
+		}
+	</script>
+</body>
+</html>

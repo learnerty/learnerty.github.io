@@ -1,4 +1,4 @@
-# ty-learner.github.io
+# learnerty.github.io
 我的第一个上线项目
 
 gif add    添加到git 暂时保存下来
